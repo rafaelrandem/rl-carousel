@@ -16,10 +16,13 @@ npm i rl-carousel
 
 ## Usage
 ```typescript
-import {RlCarouselModule} from 'rl-carousel'
+...
+import { BrowserAnimationsModule }  from '@angular/platform-browser/animations';
+import { RlCarouselModule } from 'rl-carousel'
 
 imports: [
-    ...    
+    ... 
+    BrowserAnimationsModule,   
     RlCarouselModule
   ]
 ````

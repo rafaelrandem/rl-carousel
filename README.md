@@ -7,14 +7,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 
-##NPM
+## NPM
 
 ```bash
 npm i rl-carousel
 ````
 
 
-##Usage
+## Usage
 ```typescript
 import {RlCarouselModule} from 'rl-carousel'
 
@@ -24,6 +24,8 @@ imports: [
   ]
 ````
 
+Html
+
 ```html
  <rl-carousel>
       <rl-carousel-slide [imageUrl]="'../assets/images/meerkats.jpg'"></rl-carousel-slide>
@@ -32,8 +34,12 @@ imports: [
       ...
 </rl-carousel>
 ````
+
+Style (SASS)
+
 ```sass
-::ng-deep //optional 
+::ng-deep  
+
     rl-carousel .container
       position: relative
       box-sizing: border-box

@@ -1,10 +1,7 @@
-import { Injectable } from '@angular/core';
 import {BehaviorSubject} from 'rxjs';
 import {throttleTime} from 'rxjs/operators';
 
-@Injectable({
-  providedIn: 'root'
-})
+
 export class RlCarouselService {
 
   table = [];

@@ -4,8 +4,8 @@ import { BrowserAnimationsModule }  from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 
-// import { RlCarouselModule } from '../../projects/rl-carousel/src/lib/rl-carousel.module';
-import { RlCarouselModule} from 'rl-carousel';
+import { RlCarouselModule } from '../../projects/rl-carousel/src/lib/rl-carousel.module';
+// import { RlCarouselModule} from 'rl-carousel';
 
 @NgModule({
   declarations: [

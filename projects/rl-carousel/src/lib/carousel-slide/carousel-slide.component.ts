@@ -10,22 +10,16 @@ let timer = '600ms';
   animations: [
 
     trigger('rl-animate', [
+
       state('active', style({
         zIndex: '100',
         opacity: 1,
         transform: 'translateX(0)'
       })),
-
       state('inactive', style({
         opacity: 0,
         zIndex: '-1',
       })),
-
-      // transition('active => *', animate('1000ms ease-out'), {delay: 3000}),
-      // transition('* => active', animate('0ms ease-in')),
-      // transition('active  <=> *', animate('1000ms ease-out'))
-
-
 
 
       state('right', style({
@@ -33,25 +27,23 @@ let timer = '600ms';
         opacity: 1,
         transform: 'translateX(-100%)' ,
       })),
-
       state('left', style({
         zIndex: 10,
         opacity: 1,
         transform: 'translateX(-100%)' ,
       })),
-
       state('center', style({
         zIndex: 100,
         opacity: 1,
         transform: 'translateX(0)' ,
       })),
 
+
       state('leftToCenter', style({
         zIndex: 150,
         opacity: 1,
         transform: 'translateX(0)' ,
       }))
-
       ,state('rightToCenter', style({
         zIndex: 150,
         opacity: 1,
@@ -62,7 +54,6 @@ let timer = '600ms';
         opacity: 0,
         transform: 'translateX(-100%)' ,
       }))
-
       ,state('centerToRight', style({
         opacity: 0,
         transform: 'translateX(100%)' ,
@@ -127,7 +118,7 @@ let timer = '600ms';
 
 export class CarouselSlideComponent implements OnInit {
 
-  @ViewChild('caroItem', {static: false}) el: ElementRef
+  @ViewChild('caroItem', {static: false}) el: ElementRef;
 
   @Input() imageUrl = '';
   @Input() animState = 'inactive';

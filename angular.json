@@ -118,6 +118,41 @@
           }
         }
       }
+    },
+    "rl-carousel": {
+      "projectType": "library",
+      "root": "projects/rl-carousel",
+      "sourceRoot": "projects/rl-carousel/src",
+      "prefix": "rl",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/rl-carousel/tsconfig.lib.json",
+            "project": "projects/rl-carousel/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/rl-carousel/src/test.ts",
+            "tsConfig": "projects/rl-carousel/tsconfig.spec.json",
+            "karmaConfig": "projects/rl-carousel/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/rl-carousel/tsconfig.lib.json",
+              "projects/rl-carousel/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "RlCarouselProject"
 }

@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "rl-carousel": [
+        "dist/rl-carousel"
+      ],
+      "rl-carousel/*": [
+        "dist/rl-carousel/*"
+      ]
+    }
   }
 }
